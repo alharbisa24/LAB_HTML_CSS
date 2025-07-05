@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini project 1</title>
+</head>
+<style>
+    *{
+        margin:30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .main{
+        text-align: center;
+        background-color: #F0F0F0;
+    padding:20px;
+    border-radius: 30px;
+    
+    }
+    #aboutMe { 
+        color:dodgerblue;
+        padding:20px;
+    }
+    table {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-left: auto; margin-right: auto; 
+  width:80%;
+}
+
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+tr:nth-of-type(even) {
+  background-color: #ddd;
+}
+
+.githubButton{
+    background-color:#000;
+    color:white;
+    padding:20px;
+    text-decoration: none;
+    border-radius: 28px;
+}
+
+.linkedinButton{
+    background-color:dodgerblue;
+    color:white;
+    padding:20px;
+    text-decoration: none;
+    border-radius: 28px;
+}
+.contactform{
+    background-color: #F0F0F0;
+    padding:20px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+input, textarea{
+    border-radius: 30px;
+    border:none;
+    width:30%;
+    margin:20px;
+    padding:20px
+}
+
+#submitButton {
+  background-color: #000;
+  width:33%;
+  color: white;
+  border: none;
+  padding: 20px;
+  cursor:pointer;
+  border-radius: 32px;
+}
+
+
+
+
+</style>
+<body>
+    <div class="main">
+    <br>
+ 
+        <h1 id="aboutMe"> About me</h1>
+        <h2><b>Meshari Alharbi </b></h2>
+        <i>Software Engineer</i>
+        <p>22 years old - King Saud University Student</p>
+
+      
+   <br>
+
+        <a class="githubButton" href="https://github.com/alharbisa24">Github</a>
+        <a class="linkedinButton" href="https://github.com/alharbisa24">Linkedin</a>
+
+        <br><br>
+        <br><br>
+        <br><br>
+    </div>
+        <div class="contactform">
+        <h1>Contact Form</h1>
+        <form action="/contact" method="post">
+            <label>Name</label>
+            <br>
+            <input type="text" placeholder="enter your name" name="name" id="name">
+            <br>
+            <label>Phone number</label>
+            <br>
+            <input type="text" placeholder="enter your phone number" name="phone" id="phone">
+            <br>
+            <label>Message</label>
+            <br>
+            <textarea name="message" id="message"></textarea>
+            <br>
+            <input type="submit" value="send" id="submitButton">
+
+        </form>
+    </div>
+</body>
+</html>
